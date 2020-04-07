@@ -1,0 +1,149 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    color: navy;
+}
+#resume {
+    height: 100%;
+    width: 100%;
+}
+h1 {
+    line-height: 0px;
+    width: 100%;
+    font-size: 60px;
+    color: black;
+    font-weight: bold;
+}
+h2 {
+    line-height: 0px;
+    color: black;
+    font-weight: lighter;
+}
+h3 {
+    line-height: 0px;
+    color: white;
+    font-weight: heavier;
+}
+h4 {
+    line-height: 0px;
+    color: white;
+}
+/******************************/
+#sideMenuLeft {
+    height: 100%;
+    width: 12.5%;
+    background-color: #282828;
+    float: left;
+    text-align: center;
+    font-size: 1.3em;
+    position: fixed;
+}
+#sideMenuLeftTitle {
+    background-color: #282828;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    margin: auto;
+}
+#sideMenuLeftTitle ul {
+    list-style-type: none;
+}
+#sideMenuLeftNav {
+    background-color: #282828;
+    width: 100%;
+    margin-right: auto;
+    text-align: left;
+}
+#sideMenuLeftNav a{
+    color: #808080;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#sideMenuLeftNav ul {
+    list-style-type: none;
+}
+#sideMenuLeftImg{
+    width: 100%;
+    height: 20%;
+}
+#sideMenuLeftImg img {
+    width: 125px; 
+    height: 125px;
+    border: solid white;
+    border-radius: 50%;
+    margin: 25% 0 0 0;
+}
+/******************************/
+#topMenu {
+    
+}
+/******************************/
+#contentMain {
+    text-align: center;
+    margin: auto;
+    float: center;
+    width: 75%;
+    height: 100%;
+    
+}
+#contentMainHolder  {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: 70%;
+    padding: 20% 10% 0 3%;
+}
+
+#contentMainHolder {
+
+}
+/******************************/
+.intro {
+    height: 100%;
+    width: 100%;
+}
+/******************************/
+#sideMenuRight {
+    height: 100%;
+    width: 12.5%;
+    background-color: indigo;
+    float: Right;
+    text-align: center;
+    background: linear-gradient(to bottom, darkgrey 10%,gray);
+    font-size: 1.3em;
+    position: fixed;
+    outline: solid thin white;
+    outline-offset: -10%;
+}
+#sideMenuRightNav {
+    background-color: indigo;
+    background: linear-gradient(to top, black,gray);
+    width: 100%;
+    margin-right: auto;
+    text-align: Right;
+}
+#sideMenuRightNav a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#sideMenuRightNav ul {
+    list-style-type: none;
+}
+#sideMenuRightImg{
+    
+}
+#sideMenuRightImg img {
+    width: 150px; 
+    height: 150px;
+    border: 8px solid gray;
+    border-radius: 100px;
+    margin: 80% 0 0 0;
+}
