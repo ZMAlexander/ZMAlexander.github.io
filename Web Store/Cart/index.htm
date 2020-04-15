@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<title>Title Missing - replace with Shopping Cart : Your Store Name</title>
+	
+	<meta name="description"  content="Description Missing - replace with unique description for this page">
+	<meta name="author"  content="Author Missing - replace with your e-mail address">
+	
+	<LINK REL="STYLESHEET" HREF="../Include/Style_Registration.css" TYPE="text/css"> 
+	
+	<script language="javascript">
+
+		function howManyFields( ) {
+		// Incoming paramters : 	None.
+		// Responsibilities : 		Find how many fields are in the URL parameter list.
+		// 							Will always return two the number of "actual" fields because the list will consist of
+		//							FieldName = Value for each field.
+		// Return Type :			Number of fields in the parameter list.
+
+			  searchString = location.search.slice(1);  
+			  searchString = unescape(searchString); 
+			  formString = searchString.replace(/\+/g, " ");
+			  data = formString.split(/[&=]/g); 
+			  // Debug code, activate if you want to "see" what's going on.
+			  // alert("I retrieved : " + data.length);
+			  return data.length;
+		}
+
+		function retrieveData( Which ) { 
+		// Incoming paramters : 	An integer denoting which field in the URL parameter list you want returned.
+		// Responsibilities : 		Extract a specific field from the URL parameter list.
+		//							CAUTION!  Contains no edit checking against "Which", so ensure you pass in a valid number!
+		// Return Type :			Requested field from parameter list. 
+
+			  // Debug code, activate if you want to "see" what's going on.
+			  // alert( "location.search.slice(1) : " + location.search.slice(1) );
+			  searchString = location.search.slice(1); 
+			
+			  // Debug code, activate if you want to "see" what's going on.
+			  // alert( "unescape(searchString) : " + unescape(searchString) );
+			  searchString = unescape(searchString);
+			  
+			  // Debug code, activate if you want to "see" what's going on.
+			  // alert( "searchString.replace(/\+/g, ' ') : " + searchString.replace(/\+/g, " ") );
+			  formString = searchString.replace(/\+/g, " ");
+			  
+			  // Debug code, activate if you want to "see" what's going on.
+			  // alert( "formString.split(/[&=]/g) : " + formString.split(/[&=]/g) );
+			  data = formString.split(/[&=]/g); 
+			  
+			  // Debug code, activate if you want to "see" what's going on.
+			  // alert("I'm returning : " + data[Which]);
+			  return data[Which];
+		} 
+
+	</script>
+
+
+
+</head>
+
+<body>
+
+
+	<!-- Header ... the Maple Leaf, the Company Address, the Blue Cell under the address -->
+	<div id="Header">
+		 
+		 
+  		 <div id="HeaderLeft">  
+		    
+            <img src="../Images/MadeInCanada.gif" width="40" height="40" alt="Canadian Flag">
+			
+		 </div>
+		 
+		 
+		 <div id="HeaderRight">  
+		    
+            <div  id="HeaderRightTop">
+			
+			 	 
+				 
+			</div>
+			
+			<div id="HeaderRightBottomRight">  	
+		 	    
+        		 <!-- Nothing goes here, fixed white space to force the blue cell to align with the swoop -->&nbsp;
+			
+		 	</div>
+			
+			<div id="HeaderRightBottomLeft">
+			
+				 <HR>
+				 
+			</div>			
+			
+		 </div>
+		 		          
+    </div>
+    <!-- End of Header  -->
+	
+	
+	
+	<!-- Swoop ... Your Company Logo -->
+	<div id="Swoop">
+
+		 <img src="../Images/Header400.gif" width="400" height="130" alt="Home" title="Home">
+		 
+	</div>
+    <!-- End of Swoop  -->
+	
+	
+	
+	
+	
+	<!-- AboveMenuBar -->
+	<div id="AboveMenuBar">
+	
+		 <div id="AboveMenuBarRight1"> 	
+		 	    
+        	<img src="../Images/top-right-navbar.gif" width="132" height="88" alt="Top Right Nav Bar">
+			
+		 </div>
+		 
+		 <div id="AboveMenuBarRight2">
+		 
+		     <!-- If you want to use spaces in the title, use &nbsp; -->
+        	<h1>Shopping Cart </h1>
+			
+		 </div>
+				 
+	</div>
+    <!-- End of AboveMenuBar  -->
+	
+	
+		
+	
+	<!-- MenuBar -->
+	<div id="MenuBar">
+			  
+		<div  id="MenuBarTop"> 	
+
+		   
+			
+		</div>
+			
+		<div  id="MenuBarBottom">
+			
+			<img src="../Images/bottom-right-navbar.gif" width="126" height="60" alt="Bottom Right Nav Bar"> 
+			
+	 	</div>
+		
+			
+	</div>
+    <!-- End of MenuBar  -->
+	
+	
+
+	
+	<div id="RegForm">
+	
+		  This page has received the following data ::
+		  <br><br>
+		  
+		  <!-- Here's a dump of everything we received.  Not very useful on a production page, 						-->
+		  <!-- but shown here as way of proof of what has been sent / received										-->
+		  
+		  <!-- Note that howManyFields() and retrieveData() are JavaScript functions defined above in the <head>	-->
+		  
+		  <script language="javascript"> 
+		  
+			for (i=0;i<howManyFields();i++) document.write( "("+i+") " + retrieveData(i) + "<br />" ); 
+			
+		 </script>
+		 <br><br>
+		 <a href="javascript:history.go(-1)"> Back </a>
+	</div>
+
+	<!-- End of Registration Form -->
+
+
+
+
+	
+	
+<!-- Modified by Your Name Here -->	
+</body>
+</html>

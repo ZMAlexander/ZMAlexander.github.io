@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+    Created by: Zach MacKay
+    Description: Web App made for listing collectable cards faster
+    Languages: HTML, CSS, Javascript
+    Date Started: 2018-11-09
+    Last Edited: 2019-01-15
+    Edit Log at Bottom
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ebay Listing Creator by Zach MacKay</title>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+    <div id="title">
+        <h1>Ebay Listing Creator</h1>
+    </div>
+    
+    <div id="leftSideMenu">
+        
+    </div>
+    <div id="allContent">
+        
+        <div id="dropFill">
+            <!--Do not write here, this section is automatically filled.-->
+        </div>
+        
+        <div id="buttonHolder">
+            <p><button id="clearSelections">Clear</button></p>
+            <p><button id="btnDone" type="button">Generate Listing</button></p>
+        </div>
+            
+        <div id="listGen">
+            <button id="copyGeneratedText" onclick="clickToHighlight()">Click Here to Copy</button>
+            <input type="text" id="copyFrom"><p></p>
+        </div>
+        <br><br><br><br><br>
+        
+        <p><button id="btnSettings" type="button">Settings</button></p>
+        <div id="settingsPanel" class="hidden">
+            <p><input type="checkbox" id="chkManualManu">Manually input manufacturer name</p>
+            <p><input type="checkbox" id="chkManualName">Manually input player name</p>
+            <p><input type="checkbox" id="chkManualTeam">Manually input team name</p>
+            <input type="text" id="nameListHelper" onclick="this.select()"><-- Name List Helper
+        </div>
+        
+    </div>
+    
+        
+        
+    <div id="footer">
+        Created by Zach MacKay
+    </div>
+</body>
+<!--
+    Edit Log:
+    2018-11-09: Created web application
+    2018-11-10: Added name list helper
+    2018-11-16: Added settings panel
+    
+-->
+</html>

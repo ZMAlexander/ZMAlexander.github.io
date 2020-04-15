@@ -1,0 +1,363 @@
+<STYLE type="text/css">
+
+/* Validate at http://jigsaw.w3.org/css-validator/ */
+
+/*********************************************************************************
+ 	
+	Style_Registration.css
+	Standard style sheet for Registration Page
+	
+	Created  by : Joe.Marriott@nbcc.ca / Sometime in your past
+	
+	Modified by:	Zach MacKay / 2017-11-28
+	
+	Additional Comments?	
+
+	
+**********************************************************************************/
+
+
+
+/********************************************************************************* 	
+
+	Explanation of # and . 
+
+	# is an id selector, used to target a single specific element with a unique id, 
+	but . is a class selector used to target multiple elements with a particular class. 
+	
+	To put it another way:
+
+	#foo {} will style the single element declared with an attribute id="foo"
+	.foo {} will style all elements with an attribute class="foo" 
+		(you can have multiple classes assigned to an element too, just separate them with spaces, e.g. class="foo bar")
+
+
+	For example...
+	
+**********************************************************************************/
+
+
+p.SomeClass {
+/* Modify the attributes of a tag only if that tag is the member of a class.	*/
+/* In this case, more than one paragraph could be a member of the class.		*/
+}
+
+
+.AnotherClass {
+/* A Class Name, perhaps encapsulating a quantity of HTML code via SPAN or DIV	*/
+/* Many SPANS or DIVs could be members of the same class.						*/
+}
+
+#SomeID {
+/* A unique ID that only one SPAN or DIV could be identified with.				*/
+}
+
+#SomeID p {
+/* Modify the attributes of a tag only if found inside a particular ID.			*/
+}
+
+#SomeID p.SomeClass {
+/* Modify the attributes of a tag only if found inside a particular ID, 		*/
+/* and only if that tag is the member of a class.								*/
+}
+
+
+
+
+/************************************************************************************************************************/
+/* Start of Design Template                                                                                        		*/
+/************************************************************************************************************************/
+
+body {
+  background-color: white;
+}
+
+/*********************************************************************************/
+/* Overall container for the Maple Leaf, Company Address, and Blue Bar with Line */
+/*********************************************************************************/
+
+#Header {  
+  position:			absolute;
+  top: 				6px; 
+  left: 			6px; 
+  right: 			45px;
+
+  font-family: 		"arial black", arial, helvetica;
+  font-style: 		normal;
+  font-weight: 		normal;  
+  font-size: 		7pt;
+  color: 			black;
+
+}
+
+	#HeaderLeft {  /* Left side of Header, contains Maple Leaf */
+		float: 				left;
+		width:				42px;
+		background-color:	white;
+	}
+	
+	#HeaderLeft img {  /* Maple Leaf */
+		float: 				left; 
+		margin: 			0px 0px 0px 0px;
+	}
+
+	#HeaderRight { /* Right side of Header, contains Company Address, and Blue Bar with Line */
+		height: 			50px;
+		background-color: 	white;
+	}
+
+
+		#HeaderRightTop { /* Top of HeaderRight, contains Company Address */
+			height: 			15px; 
+			padding-top: 		2px;
+		}
+
+		#HeaderRightBottomRight { /* The bar under the Company Address, this is used to align the blue bar to the edge of the swoop */
+			float: 				right; 
+			height: 			15px; 
+			width: 				251px;  
+			background-color: 	white
+		}
+
+		#HeaderRightBottomLeft { /* The bar under the Company Address, this is used to construct the blue bar with the thin white line */
+			height: 			13px; 
+			padding:			1px;
+			background-color: 	#0066CC;
+		}
+
+
+		
+		
+
+#Swoop {
+  position: 		absolute; 
+  right: 			19px; 
+  top: 				38px; 
+  height: 			130px; 
+  width: 			100%;
+}
+
+#Swoop img {  /* Company logo */
+	float: 			right; 
+	margin: 		0px 0px 0px 0px;
+}
+	
+
+	
+	
+
+#AboveMenuBar {
+  position: 		absolute; 
+  top: 				165px; 
+  right: 			21px;  
+}
+
+#AboveMenuBar img {  
+	float: 			right; 
+	margin: 		0px 0px 0px 0px;
+}
+
+#AboveMenuBar h1{ 
+  font-family: 		"cooper black", "arial black", arial, helvetica;
+  font-style: 		normal;
+  font-weight: 		bold;
+  font-size: 		12pt;
+  color: 			white;
+}
+
+#AboveMenuBarRight1 {
+  float: 			right; 
+  height: 			88px; 
+  width: 			132px;
+
+}
+
+#AboveMenuBarRight2 {
+  position:			absolute; 
+  top:				-5px;  
+  width:			258px;
+  right:			0px;
+  background-color: red;
+}
+
+
+
+#MenuBarTop {
+  background-color: #0066CC;
+}
+
+#MenuBarBottom {
+  position: 		relative; 
+  top: 				-7px;
+  float: 			right;
+
+}
+
+#MenuBarBottom img {  
+	float: 			right; 
+	margin: 		0px 0px 0px 0px;
+}
+
+
+
+/*********************************************************************************/
+/* Overall container for MenuBar							 					 */
+/*********************************************************************************/
+
+#MenuBar {
+  position: 		absolute; 
+  float: 			right; 
+  top: 				253px; 
+  width: 			126px; 
+  right: 			21px;
+  z-index:			1000;		/* Divs with higher z's are placed on top of lower z's */
+  font-family: 		"arial black", arial, helvetica;
+  font-style: 		normal;
+  font-weight: 		normal;
+  font-size: 		9pt;
+  color: 			yellow;
+}
+
+	#MenuBar a {	/* Define the appearance of links within the menu */
+		font-family: 		"arial black", arial, helvetica;
+		font-style: 		normal;
+		font-weight: 		normal;
+		font-size: 			9pt;
+		text-decoration:	none;
+		color: 				white;
+	}
+
+	#MenuBar a:hover {	/* Define the behavior of "mousing over" links within the menu */
+		font-family: 		"arial black", arial, helvetica;
+		font-style: 		normal;
+		font-weight: 		bold;
+		font-size: 			9pt;
+		color: 				orange;  
+		text-decoration: 	underline;
+	}
+
+	#Menubar a.YouAreHere {  /* The YouAreHere class changes the appearance of a link to a page if you are currently on it.  */
+		font-family: 		"arial black", arial, helvetica;
+		font-style: 		normal;
+		font-weight: 		bold;
+		font-size: 			9pt;
+		color: 				white;  
+		text-decoration:	none;
+	}
+
+
+
+
+
+
+
+/*********************************************************************************/
+/* Overall container for Registration Form					 					 */
+/*********************************************************************************/
+
+#RegForm {
+	position: 			relative; 
+	float: 				left;
+	left: 				10%;
+	top: 				248px; 
+	width:				60%;
+	border-radius: 		25px;
+	margin:				0 auto;
+	padding: 			25px;	
+	background-color: 	#99CCFF;
+	min-height: 		100px;
+	overflow: 			hidden;
+	background-image:	url('../images/Background.jpg');
+	background-repeat: 	no-repeat;
+	background-size: 	100% 100%;
+	
+	
+}
+
+#RegForm h1 {
+	font-family: 		"arial black", arial, helvetica;
+    font-style: 		normal;
+    font-weight: 		bold;
+    font-size: 			24pt;
+	text-align: 		center; 
+    color: 				black;
+}
+
+
+/********************************************************************************/
+/* Since there may be multiple sections in the RegForm DIV, we will control	    */
+/* their appearance with Classes instead of IDs									*/
+/********************************************************************************/
+
+.RegFormLeftCol {
+	position:			relative;
+	width: 				49%; 
+	float: 				left;
+	background-color: 	white;
+	border-style: 		ridge;
+	border-width:		2px;
+	font-weight: 		bold;
+}
+
+.RegFormLeftCol input {
+	float: 				right;
+	
+}
+
+.RegFormRightCol {
+	position:			relative;
+	width: 				49%; 
+	float: 				right;
+	background-color: 	white;
+	border-style: 		ridge;
+	border-width:		2px;
+	font-weight: 		bold;
+}
+
+.RegFormRightCol input {
+	float: center;
+	
+}
+
+.RegFormFullCol {
+	position:			relative;
+	width: 				100%; 
+	float: 				left;
+	/*background-color: 	#CC3399;*/
+	text-align: 		center;
+	font-size: 			8pt;
+	
+}
+
+.RegFormFullCol p {
+	text-align: 		center;
+	font-size: 			16pt;
+	color: 				blue;
+    font-weight: 		bold;
+	
+}
+
+.RegFormButtons {
+	position:			relative;
+	width: 				61%; 
+	float: 				left;
+	text-align:			right;
+}
+
+.RegFormButtons input {
+	height:				40px; 
+	width:				100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Modified by Your Name Here */
+</STYLE>

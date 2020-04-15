@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--
+ZachMacKay.com: 
+Portfolio and showcase for projects and misc
+Created by: 
+Zach MacKay
+Date:
+2019-03-15
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Favicon -->
+        <link rel="icon" href="images/catLink.gif" type="image/gif" sizes="16x16">
+        <!-- Style Sheets -->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <!-- Scripts -->
+        <script src="scripts/index.js"></script>
+        
+        <title>Zach MacKay</title>
+    </head>
+    <body>
+        <div id="topMenu">
+            <div id="topMenuLogo">
+                <img src="images/nyan.png"><div id="nameLogo"><h1>Welcome</h1></div>
+            </div>
+            <div id="topMenuNav">
+                <div class="navLeft">
+                    <a href="index.html"><button>Home</button></a>
+                    <a href="tools.html"><button>Tools</button></a>
+                    <a href="gallery.html"><button>Gallery</button></a>
+                    <a href="projects.html"><button>Projects</button></a>
+                    <a href="extra.html"><button id="editor" >Extra Button</button></a>
+                </div>
+                <div class="navRight">
+                    <a href="login.php"><button id="loginOpt">Logout</button></a>
+                    <a href="forums.html"><button id="profile">Community</button></a>
+                    <a href="store.html"><button id="profile">Store</button></a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="center" class="white parallax">
+            <div id="greeting">
+                Hey, welcome to my website!
+            </div>
+            <div id="featured">
+                <div id="featuredDataHolder">
+                    <!-- 
+                    <div id=title>Annoucements</div>
+                    * These are example boxes but can be (optionally)hard coded
+                    -->
+                    <div id="featuredData">
+                        <div id="quizName">
+                            Zach MacKay
+                        </div>
+                        <div id="quizDescription">
+                            <p>Quick blurb about me or the website contents</p>
+                        </div>
+                    </div>
+                    <!-- 
+                    * End of a hardcoded boxes
+                    -->
+                </div>
+            </div>
+            <div id="latest">
+                
+                <div id="latestDataHolder">
+                    <!-- 
+                    <div id=title>Quick Access</div>
+                    * These are example boxes and should be built in javascript and appeneded into the "latestDataHolder" div
+                    -->
+                    <div id="latestData">
+                        <div id="quizName">
+                            Hover to see Projects.
+                        </div>
+                        <div id="quizDescription">
+                            <p>Assemble an order to be shipped to your store.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="CreateOrders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >Create</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- 
+                    * End of a single example box
+                    -->
+                    <div id="latestData">
+                        <div id="quizName">
+                            Hover to see Tools.
+                        </div>
+                        <div id="quizDescription">
+                            <p>View assembled orders and their status.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="ViewOrders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >View</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="latestData">
+                        <div id="quizName">
+                            Hover to see Gallery.
+                        </div>
+                        <div id="quizDescription">
+                            <p>View items on a backorder.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="Orders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >View</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="latestData">
+                        <div id="quizName">
+                            Hover to see Store.
+                        </div>
+                        <div id="quizDescription">
+                            <p>Create an emergency order. Only use if required.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="Orders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >Create</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- 
+                    * End of full sample, there should always be 4 here
+                    -->
+                </div>
+            </div>
+            
+            
+        </div>
+             
+        <div id="center" class="parallax">
+            <div id="greeting">
+            </div>
+            <div id="featured">
+            
+            </div>
+        </div>
+        
+        <div id="center" class="blue parallax">
+            <div id="greeting">
+                Hey User, welcome to your dashboard.
+            </div>
+            <div id="featured">
+                <div id="featuredDataHolder">
+                    <div id=title>Annoucements</div>
+                    <!-- 
+                    * These are example boxes but can be (optionally)hard coded
+                    -->
+                    <div id="featuredData">
+                        <div id="quizName">
+                            Announcement title
+                        </div>
+                        <div id="quizDescription">
+                            <p>This is where the Number Three description goes.</p>
+                        </div>
+                    </div>
+                    <!-- 
+                    * End of a hardcoded boxes
+                    -->
+                </div>
+            </div>
+            <div id="latest">
+                
+                <div id="latestDataHolder">
+                    <div id=title>Quick Access</div>
+                    <!-- 
+                    * These are example boxes and should be built in javascript and appeneded into the "latestDataHolder" div
+                    -->
+                    <div id="latestData">
+                        <div id="quizName">
+                            Create Normal Order.
+                        </div>
+                        <div id="quizDescription">
+                            <p>Assemble an order to be shipped to your store.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="CreateOrders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >Create</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- 
+                    * End of a single example box
+                    -->
+                    <div id="latestData">
+                        <div id="quizName">
+                            View Orders.
+                        </div>
+                        <div id="quizDescription">
+                            <p>View assembled orders and their status.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="ViewOrders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >View</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="latestData">
+                        <div id="quizName">
+                            View Backorders.
+                        </div>
+                        <div id="quizDescription">
+                            <p>View items on a backorder.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="Orders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >View</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="latestData">
+                        <div id="quizName">
+                            Create Emergency Order.
+                        </div>
+                        <div id="quizDescription">
+                            <p>Create an emergency order. Only use if required.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="Orders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >Create</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- 
+                    * End of full sample, there should always be 4 here
+                    -->
+                </div>
+            </div>
+            
+            <div id="greeting">
+                Hey User, welcome to your dashboard.
+            </div>
+            <div id="featured">
+                <div id="featuredDataHolder">
+                    <div id=title>Annoucements</div>
+                    <!-- 
+                    * These are example boxes but can be (optionally)hard coded
+                    -->
+                    <div id="featuredData">
+                        <div id="quizName">
+                            Announcement title
+                        </div>
+                        <div id="quizDescription">
+                            <p>This is where the Number Four description goes.</p>
+                        </div>
+                    </div>
+                    <!-- 
+                    * End of a hardcoded boxes
+                    -->
+                </div>
+            </div>
+            <div id="latest">
+                
+                <div id="latestDataHolder">
+                    <div id=title>Quick Access</div>
+                    <!-- 
+                    * These are example boxes and should be built in javascript and appeneded into the "latestDataHolder" div
+                    -->
+                    <div id="latestData">
+                        <div id="quizName">
+                            Create Normal Order.
+                        </div>
+                        <div id="quizDescription">
+                            <p>Assemble an order to be shipped to your store.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="CreateOrders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >Create</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- 
+                    * End of a single example box
+                    -->
+                    <div id="latestData">
+                        <div id="quizName">
+                            View Orders.
+                        </div>
+                        <div id="quizDescription">
+                            <p>View assembled orders and their status.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="ViewOrders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >View</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="latestData">
+                        <div id="quizName">
+                            View Backorders.
+                        </div>
+                        <div id="quizDescription">
+                            <p>View items on a backorder.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="Orders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >View</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="latestData">
+                        <div id="quizName">
+                            Create Emergency Order.
+                        </div>
+                        <div id="quizDescription">
+                            <p>Create an emergency order. Only use if required.</p>
+                        </div>
+                        <div id="btnTakeQuiz">
+                            <form action="Orders.php" id="takeQuiz" method="POST">
+                                <button type="submit" >Create</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- 
+                    * End of full sample, there should always be 4 here
+                    -->
+                </div>
+            </div>
+        </div>
+            
+        
+    </body>
+</html>

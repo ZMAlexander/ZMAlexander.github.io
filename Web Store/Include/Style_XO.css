@@ -1,0 +1,523 @@
+<STYLE type="text/css">
+
+/* Validate at http://jigsaw.w3.org/css-validator/ */
+
+/*********************************************************************************
+ 	
+	Style_XO.css
+	Standard style sheet for 04.XO_Game Demo Page
+	
+	Created  by : Joe.Marriott@nbcc.ca / Sometime in your past
+	
+	
+	Modified by:	Zach MacKay / 2017-11-07
+	
+**********************************************************************************/
+
+/********************************************************************************* 	
+
+	Explanation of #  
+
+	# is an id selector, used to target a single specific element with a unique id. 
+ 	
+	To put it another way:
+
+	#foo {} will style the single element declared with an attribute id="foo"
+
+	For example...
+	
+**********************************************************************************/
+
+
+#SomeID {
+/* A unique ID that only one DIV could be identified with.				*/
+}
+
+#SomeID p {
+/* Modify the attributes of the paragraph tag only if found inside the DIV SomeID.			*/
+}
+
+
+
+
+
+
+/*************************************************************************************************/
+/*	Match these DIV IDs to the code found in the HTML pages that use this style sheet   	     */
+/*************************************************************************************************/ 
+
+#Demo1  {	/* Needs styles put here */
+	position: absolute; 
+	top: 100px; 
+	left: 100px; 
+	height: 300px; 
+	width: 400px; 
+	z-index: 1001; 
+	background-color: #00FFFF;
+}
+
+#Demo1  p {			/* This defines the behaviour of all paragraphs found inside the Demo1 DIV */
+  font-family: 		verdana, arial, helvetica;
+  font-style: 		normal;
+  font-weight: 		normal;
+  font-size: 		8pt;
+  color: 			#004080;
+}
+
+#Demo1  img {			/* This defines the behaviour of all images found inside the Demo1 DIV */
+  float: 			left; 
+  margin: 			0px 0px 0px 0px;
+}
+
+
+
+#Demo2 {
+  position: 		absolute; 
+  bottom: 			100px; 
+  right: 			100px; 
+  height: 			300px; 
+  width: 			400px; 
+  z-index:			1002;		/* Divs with higher z's are placed on top of lower z's */
+  background-color: #FFFF00;
+}
+
+#Demo2  p {
+  font-family: 		verdana, arial, helvetica;
+  font-style: 		normal;
+  font-weight: 		normal;
+  font-size: 		14pt;
+  color: 			#FF0000;
+}
+
+#Demo2 img {
+  float: 			right; 
+  margin: 			0px 0px 0px 0px;
+}
+
+
+
+
+#Demo3 {
+  position: 		relative;   /* Try changing to relative and reload the page */
+  /*float:			left;*/
+  margin:			100px;
+  top: 				00px; 
+  left: 			00px; 
+  height: 			300px; 
+  width: 			600px; 
+  z-index:			1002;		/* Divs with higher z's are placed on top of lower z's */
+  background-color: #FFBB00;
+}
+/*********************************************************************/
+/*																     */
+/*																	 */
+/*********************************************************************/ 
+/*********************************************************************/
+/*																     */
+/*																	 */
+/*********************************************************************/ 
+/*********************************************************************/
+/*	I put the thing here to see if I could. Looks like I can.	     */
+/*																	 */
+/*********************************************************************/ 
+#CanIPutThisAnywhere {
+	position: relative;
+	margin: 123px;
+	top: 1px;
+	left: 13 px;
+	z-index: -1;
+	background-color: 551a8b;
+}
+
+#CanIPutThisAnywhere p {
+  font-family: 		verdana, arial, helvetica;
+  font-style: 		normal;
+  font-weight: 		normal;
+  font-size: 		16pt;
+  color: 			#FF1234;
+}
+
+#Demo3  p {
+  font-family: 		verdana, arial, helvetica;
+  font-style: 		normal;
+  font-weight: 		normal;
+  font-size: 		16pt;
+  color: 			#FF1234;
+}
+
+#Demo3 img {
+  float: 			left; 
+  margin: 			5px 5px 5px 5px;
+}
+
+
+
+#Demo4 {
+  position: 		relative;   /* Try changing to relative and reload the page */
+  /*float:			left;*/
+  margin:			100px;
+  top: 				00px; 
+  left: 			00px; 
+  height: 			300px; 
+  width: 			600px; 
+  z-index:			1002;		/* Divs with higher z's are placed on top of lower z's */
+  background-color: #FFAABB;
+}
+
+#Demo4  p {
+  font-family: 		verdana, arial, helvetica;
+  font-style: 		normal;
+  font-weight: 		normal;
+  font-size: 		16pt;
+  color: 			#FF1234;
+}
+
+#Demo4 img {
+  float: 			right; 
+  margin: 			5px 5px 5px 5px;
+}
+
+
+
+#Demo5 {
+  position: 		relative;   /* Try changing to relative and reload the page */
+  -webkit-transform: rotate(-45deg); 
+  margin-left: 		auto ;
+  margin-right:	    auto ;  
+  top: 				200px; 
+  left: 			50px; 
+  height: 			243px; 
+  width: 			166px; 
+  z-index:			100;		/* Divs with higher z's are placed on top of lower z's */
+}
+
+#Demo5  p {
+  font-family: 		verdana, arial, helvetica;
+  font-style: 		normal;
+  font-weight: 		normal;
+  font-size: 		16pt;
+  color: 			#FFFF00;
+}
+
+#Demo5 img {
+  float: 			left; 
+  margin: 			5px 5px 5px 5px;
+}
+
+
+
+/*********************************************************************/
+/*	X O Game 1 													     */
+/*																	 */
+/*********************************************************************/ 
+#Game1 {
+	position: absolute; 
+	top: 0px; 
+	left: 1225px; 
+	height: 380px; 
+	width: 380px;
+}
+
+#Game1_Board{
+  position: 		absolute; 
+  top: 				0px; 
+  right: 			200px; 
+  height: 			360px; 
+  width: 			360px; 
+  z-index:			100;
+  background-color: #FFFF00;
+}
+
+#Game1_FirstPlay {
+  position: 		absolute; 
+  top: 				250px; 
+  left: 			65px; 
+  height: 			80px; 
+  width: 			80px; 
+  z-index:			105;
+  background-color: #FFFF00;
+}
+
+#Game1_SecondPlay {
+	position: 	absolute;
+	top: 		250px;
+	right: 		350px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game1_ThirdPlay {
+	position: absolute;
+	top: 		135px;
+	right: 		250px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game1_FourthPlay {
+	position: absolute;
+	top: 		135px;
+	right: 		350px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game1_FifthPlay {
+	position: absolute;
+	top: 		135px;
+	right: 		450px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game1_SixthPlay {
+	position: absolute;
+	top: 		25px;
+	right: 		450px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game1_SeventhPlay {
+	position: absolute;
+	top: 		25px;
+	right: 		350px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game1_EighthPlay {
+	position: absolute;
+	top: 		25px;
+	right: 		250px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game1_NinthPlay {
+	position: absolute;
+	top: 		250px;
+	right: 		450px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+
+/*********************************************************************/
+/*	X O Game 2 													     */
+/*																	 */
+/*********************************************************************/ 
+
+
+#Game2 {
+	position: absolute; 
+	top: 300px; 
+	left: 825px; 
+	height: 380px; 
+	width: 380px;
+}
+
+#Game2_Board{
+  position: 		absolute; 
+  top: 				300px; 
+  right: 			600px; 
+  height: 			360px; 
+  width: 			360px; 
+  z-index:			100;
+  background-color: #FF1234;
+}
+
+#Game2_FirstPlay {
+  position: 		absolute; 
+  top: 				250px; 
+  left: 			65px; 
+  height: 			80px; 
+  width: 			80px; 
+  z-index:			105;
+  background-color: #FFFF00;
+}
+
+#Game2_SecondPlay {
+	position: 	absolute;
+	top: 		250px;
+	right: 		350px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game2_ThirdPlay {
+	position: absolute;
+	top: 		135px;
+	right: 		250px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game2_FourthPlay {
+	position: absolute;
+	top: 		135px;
+	right: 		350px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game2_FifthPlay {
+	position: absolute;
+	top: 		135px;
+	right: 		450px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game2_SixthPlay {
+	position: absolute;
+	top: 		25px;
+	right: 		450px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game2_SeventhPlay {
+	position: absolute;
+	top: 		25px;
+	right: 		350px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game2_EighthPlay {
+	position: absolute;
+	top: 		25px;
+	right: 		250px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+#Game2_NinthPlay {
+	position: absolute;
+	top: 		250px;
+	right: 		450px;
+	height: 	80px;
+	width:		80px;
+	z-index:	111;
+	background-color: #FFFF00
+}
+
+/*********************************************************************/
+/*	Casino Night Cards Fan 										     */
+/*																	 */
+/*********************************************************************/ 
+
+#TextTopBox {
+	position: 			relative;
+	margin-left: 		auto ;
+    margin-right:	    auto ;
+	font-family: 		comic sans ms, arial, helvetica;/* Comic sans because everyone loves this font*/
+	font-style: 		normal;
+	font-weight: 		normal;
+	height: 			100px;
+	width:				600px;
+	font-size: 			48pt;
+	text-align: 		center;
+	background-color:	#FFFF00;
+	color: 				#FF0000;
+
+}
+
+#TextBottomBox {
+	position: 			relative;
+	margin-left: 		auto ;
+    margin-right:	    auto ;
+	text-align: 		center;
+	font-family: 		comic sans ms, arial, helvetica;
+	font-style: 		normal;
+    font-weight: 		normal;
+	height: 			100px;
+	width:				600px;
+	font-size: 			52pt;
+    color: 				#0000FF;
+	background-color:	#00FFFF;
+}
+
+#Cards {
+	position:           relative;
+	margin-left: 		auto ;
+    margin-right:	    auto ;
+	top: 				0px; 
+    left: 				0px; 
+	height: 			300px; 
+	width: 				600px; 
+	z-index:			100;
+}
+
+#Cards img {
+	float: 				right; 
+	margin: 			5px 5px 5px 5px;
+}
+
+#CardLeft {
+	position: 			absolute;
+	-webkit-transform: 	rotate(-45deg);
+	margin-left: 		auto ;
+    margin-right:	    auto ;
+	top: 				55px; 
+    left: 				140px; 
+	height: 			243px; 
+	width: 				166px; 
+	z-index:			100;
+}
+
+#CardCenter {
+	position: 			absolute;
+	margin-left: 		auto ;
+    margin-right:	    auto ;
+	top: 				25px; 
+    left: 				217px; 
+	height: 			243px; 
+	width: 				166px; 
+	z-index:			100;
+}
+
+#CardRight {
+	position: 			absolute;
+	-webkit-transform: 	rotate(45deg);
+	margin-left: 		auto ;
+    margin-right:	    auto ;
+	top: 				65px; 
+    right: 				155px; 
+	height: 			243px; 
+	width: 				166px; 
+	z-index:			100;
+}
+/*************MODIFIED BY Zach MacKay************/
+</STYLE>
