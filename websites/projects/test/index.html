@@ -1,77 +1,67 @@
 <!DOCTYPE html>
 <html>
+    <!--
+        Created by: Zach MacKay
+        Description: Web App made for naming collectable cards faster by having drop down menus to select from rather than manual naming
+        Languages: HTML, CSS, Javascript
+        Date Started: 2018-11-09
+        Last Edited: 2019-01-15
+        Edit Log at Bottom
+    -->
+
     <head>
-        <meta name="Author" content="Zach MacKay">
-        <link rel="stylesheet" href="css/resume.css">
+        <meta charset="UTF-8">
+        <title>Card Listing Creator by Zach MacKay</title>
+        <script src="scripts/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 
     <body>
-        <div id="resume">
-            <div id="sideMenuLeft">
-                <div id="sideMenuLeftImg">
 
-                    <img src="images/catLink.gif">
-
-                </div>
-
-                <div id="sideMenuLeftTitle">
-
-                    <h3>Zach Mackay</h3>
-                    <h4>Developer</h4>
-
-                </div>
-
-                <div id="sideMenuLeftNav">
-                    <ul>
-                        <a href="#intro"><li>Home</li></a><br>
-                        <a href="#projects"><li>Projects</li></a><br>
-                        <a href="#gallery"><li>Gallery</li></a><br>
-                        <a href="#contact"><li>Contact</li></a><br>
-                        <a href="#about"><li>About Me</li></a><br>
-                    </ul>
-                </div>
-
-                <div id="sideMenuLeftHyperlinks">
-
-                    <span><a href="https://github.com/ZMAlexander">Github</a></span>
-                    &nbsp;
-                    <span><a href="https://www.linkedin.com/in/zach-mackay-b78b89170/">LinkedIn</a></span>
-
-                </div>
-            </div>
-
-            <div id="contentMain">
-                <div id="contentMainHolder" class="intro">
-
-                    <h1>Zach Mackay</h1>
-
-                </div><hr>
-                
-                <div id="contentMainHolder" class="projects">
-
-                    <h1>Projects</h1>
-
-                </div><hr>
-
-                <div id="contentMainHolder" class="gallery">
-
-                    <h1>Gallery</h1>
-
-                </div><hr>
-
-                <div id="contentMainHolder" class="contact">
-
-                    <h1>Contact</h1>
-    
-                </div>
-
-                <div id="contentMainHolder" class="about">
-
-                    <h1>About Me</h1>
-
-                </div><hr>
-            </div>
+        <div id="title">
+            <h1>Card Listing Creator by Zach MacKay</h1>
         </div>
         
+        <div id="leftSideMenu">
+            
+        </div>
+        <div id="allContent">
+            
+            <div id="dropFill">
+                <!--Do not write here, this section is automatically filled.-->
+            </div>
+            
+            <div id="buttonHolder">
+                <p><button id="clearSelections">Clear</button></p>
+                <p><button id="btnDone" type="button">Generate Listing</button></p>
+            </div>
+                
+            <div id="listGen">
+                <button id="copyGeneratedText" onclick="clickToHighlight()">Click Here to Copy</button>
+                <input type="text" id="copyFrom"><p></p>
+            </div>
+            <br><br><br><br><br>
+            
+            <p><button id="btnSettings" type="button">Settings</button></p>
+            <div id="settingsPanel" class="hidden">
+                <p><input type="checkbox" id="chkManualManu">Manually input manufacturer name</p>
+                <p><input type="checkbox" id="chkManualName">Manually input player name</p>
+                <p><input type="checkbox" id="chkManualTeam">Manually input team name</p>
+                <input type="text" id="nameListHelper" onclick="this.select()"><-- Name List Helper
+            </div>
+            
+        </div>
+        
+        <div id="footer">
+            Created by Zach MacKay
+        </div>
     </body>
+    <!--
+        Edit Log:
+        2020-11-08: Get working online
+        2018-11-09: Created web application
+        2018-11-10: Added name list helper
+        2018-11-16: Added settings panel
+        
+    -->
 </html>
