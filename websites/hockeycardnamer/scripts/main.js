@@ -312,7 +312,7 @@ var hockeyObj = {
         "Vegas Golden Knights"
     ],
     "players": [
-        //Players are list by First Name then Last name, sorted by Last name alphabetical
+        //Players are listed by First Name then Last name, sorted by Last name alphabetical
         "",
         "Chris Ahrens",
         "Claire Alexander",
