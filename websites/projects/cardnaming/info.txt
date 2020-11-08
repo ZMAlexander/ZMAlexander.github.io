@@ -1,0 +1,17 @@
+<!--
+        Created by: Zach MacKay
+        Description: Web App made for naming collectable cards faster by having drop down menus to select from rather than manual naming
+        Languages: HTML, CSS, Javascript
+        Date Started: 2018-11-09
+        Last Edited: 2019-01-15
+        Edit Log at Bottom
+    -->    
+
+<!--
+        Edit Log:
+        2020-11-08: Get working online
+        2018-11-09: Created web application
+        2018-11-10: Added name list helper
+        2018-11-16: Added settings panel
+        
+    -->
