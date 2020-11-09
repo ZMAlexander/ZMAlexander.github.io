@@ -1,8 +1,8 @@
 /* 
  * Created by: Zach MacKay
- * Description: Web App made for listing collectable cards faster
+ * Description: Website to name collectable cards faster via drop down selections vs. typing each card info manually
  * Date Started: 2018-11-09
- * Last Edited: 2019-01-19
+ * Last Edited: 2020-11-09
  */
 
 window.onload = function () {
@@ -19,6 +19,7 @@ window.onload = function () {
 }
 
 function loadApiObject(url) {
+    //Does this even do anything?
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
@@ -43,22 +44,22 @@ function createListingTitle() {
     } else {
         manuType = "";
     }
-    var pname = document.querySelector("#cardPlayer").value;
-    pname = reverseName(pname);
+    var playerName = document.querySelector("#cardPlayer").value;
+    playerName = reverseName(playerName);
     var team = document.querySelector("#cardTeam").value;
     var cardNo = document.querySelector("#cardNum").value;
     var numSign = "";
     var tempName = document.querySelector("#playerN");
     if (tempName.classList.contains("hidden")) {
-        pname = document.querySelector("#inputName").value;
+        playerName = document.querySelector("#inputName").value;
     }
     if (cardNo != "") {
         numSign = " #";
     }
     
-    html += year + " " + manu + manuType + " - Hockey, " + team + " - " + pname + numSign + cardNo + "";
+    html += year + " " + manu + manuType + " Hockey " + team + " - " + playerName + numSign + cardNo + "";
     
-    var name = "\"" + pname + "\",";
+    var name = "\"" + playerName + "\",";
     nameListHelper.value = name;
     output.value = html;
     document.querySelector("#cardPlayer").value = "";
@@ -73,7 +74,7 @@ function readData(data) {
     //drop down for card year, changing year limits not yet implemented
     html = "<div id=\"singleDrop\"> Year: <select id=\"cardYear\">";
     for (var i = 1940; i < 2020; i++) {
-        html += "<option>" + i + "-" + (i + 1) + "</option>";
+        html += "<option>" + i + " - " + (i + 1) + "</option>";
     }
 
     html += "</select>";
@@ -108,7 +109,6 @@ function readData(data) {
     
     //hidden input for manual input of player name if it's missing from the list, unhidden via settings
     html += "</div><div id=\"manualName\" class=\"hidden\">Player: <input type=\"text\" id=\"inputName\">";
-
 
     html += "</div></div><div id=\"singleDrop\"> Team: <select id=\"cardTeam\">";
     for (var i = 0; i < data.teams.length; i++) {
@@ -167,7 +167,8 @@ function doNothing() {
 }
 
 function prefillDropDowns() {
-    //Get API for teams here: https://github.com/dword4/nhlapi#teams
+    //Get API for teams here: 
+    //https://github.com/dword4/nhlapi#teams
     //https://gitlab.com/dword4/nhlapi
     //https://statsapi.web.nhl.com/api/v1/teams
 
@@ -232,8 +233,8 @@ var hockeyObj = {
         "Fleer SkyBox",
         "Leaf",
         "Leaf Limited",
-        "OPC",
-        "OPC Chrome",
+        "O-PEE-CHEE OPC",
+        "O-PEE-CHEE OPC Chrome",
         "Pacific",
         "Pacific Crown Royale",
         "Panini",
@@ -272,6 +273,7 @@ var hockeyObj = {
         "Paralell",
         "Platinum",
         "Red",
+        "Reprint",
         "Rookie Card",
         "Rookie Year",
         "Short Print",
